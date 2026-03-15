@@ -356,6 +356,71 @@ nav {
     color: #8392a0;
 }
 
+.site-footer {
+    background: #001f3f;
+    padding: 56px 120px 18px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer-brand img {
+    width: 160px;
+    display: block;
+}
+
+.footer-social {
+    color: #d8e3ee;
+    text-align: left;
+}
+
+.footer-social p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social-icons a {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    opacity: 0.75;
+}
+
+.footer-social-icons i {
+    font-size: 11px;
+}
+
+.footer-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.14);
+    margin: 36px 0 14px;
+}
+
+.footer-copy {
+    color: #d8e3ee;
+    font-size: 12px;
+    text-align: center;
+}
+
 @media (max-width: 1100px) {
     .navbar,
     .hero,
@@ -389,6 +454,11 @@ nav {
     }
 
     .cta-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .site-footer {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -454,5 +524,20 @@ nav {
 
     .cta-card p {
         font-size: 14px;
+    }
+
+    .site-footer {
+        padding-top: 42px;
+        padding-bottom: 18px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .footer-social {
+        width: 100%;
     }
 }
